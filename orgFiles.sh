@@ -3,10 +3,10 @@
 
 log_path="$HOME/log.txt" 
 arquivo=$(zenity --entry --text "Que tipo de arquivo deseja procurar?")
-caminho=$(zenity --file-selection --title "De onde deseja procurar?" --directory)
 
 if [ -n "$arquivo" ] ; then
 #Busca somente na pasta local do usuário, mas pode ser alterado
+	caminho=$(zenity --file-selection --title "De onde deseja procurar?" --directory)
 	find "$caminho/" -name "$arquivo" \
 	    | tee >(zenity --progress --text "Procurando" --pulsate --auto-close)\
 	    >$log_path
