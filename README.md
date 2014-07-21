@@ -1,5 +1,5 @@
-ShellEx
-=======
+ShellEx - Shell examples
+========================
 
 **Public examples of shell Scripts**
 
