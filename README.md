@@ -3,11 +3,9 @@ ShellEx
 
 **Public examples of shell Scripts**
 
+**Organize Files**
 
 orgFiles - with GUI interface by Zenity
---------
-
-**Organize Files**
 
 *Allows*
 
